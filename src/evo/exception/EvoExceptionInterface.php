@@ -11,7 +11,7 @@ namespace evo\exception;
  * @link https://github.com/ArtisticPhoenix/Evo/issues
  * @version 1.0.0
  * @eJinn:buildVersion 1.0.0
- * @eJinn:buildTime 1536450082.3241
+ * @eJinn:buildTime 1536463295.0306
  */
 interface EvoExceptionInterface
 {
