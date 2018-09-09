@@ -8,10 +8,10 @@ namespace evo\exception;
  * @author ArtisticPhoenix
  * @package Evo
  * @subpackage Evo
- * @link https://github.com/ArtisticPhoenix/Evo/issues
+ * @link https://github.com/ArtisticPhoenix//issues
  * @version 1.0.0
  * @eJinn:buildVersion 1.0.0
- * @eJinn:buildTime 1536463295.0306
+ * @eJinn:buildTime 1536465687.723
  */
 class ShutdownError extends \Exception
 {
@@ -19,14 +19,14 @@ class ShutdownError extends \Exception
     /**
      * @var int
      */
-    const ERROR_CODE = 1000;
+    const ERROR_CODE = 2000;
 
     /**
      *
      * {@inheritDoc}
      * @see \Exception::__construct()
      */
-    public function __construct($message = "", $code = 1000, \Exception $previous = null)
+    public function __construct($message = "", $code = 2000, \Exception $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

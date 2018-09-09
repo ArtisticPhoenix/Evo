@@ -13,20 +13,20 @@ namespace evo\exception;
  * @eJinn:buildVersion 1.0.0
  * @eJinn:buildTime 1536465687.723
  */
-class RuntimeError extends \Exception
+class InvalidArgument extends \Exception
 {
 
     /**
      * @var int
      */
-    const ERROR_CODE = 2001;
+    const ERROR_CODE = 1000;
 
     /**
      *
      * {@inheritDoc}
      * @see \Exception::__construct()
      */
-    public function __construct($message = "", $code = 2001, \Exception $previous = null)
+    public function __construct($message = "", $code = 1000, \Exception $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }
