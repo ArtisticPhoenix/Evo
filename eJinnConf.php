@@ -28,7 +28,10 @@ return [
                     "name"      => "ShutdownError",
                     "extends"   => "\ErrorException"
                  ],
-                "2001"   => "RuntimeError",
+                "2001"   => [
+                    "name"      => "RuntimeError",
+                    "extends"   => "\ErrorException"
+                ],
             ]
         ]
     ]
