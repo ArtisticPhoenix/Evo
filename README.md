@@ -1,7 +1,6 @@
-# Evo
+# Evo/Exceptions
 Event Driving Mini Mvc (Emvc)  framework
 
-Common dependancies
+Common exceptions dependancies
 
-
-CURRENTLY W.I.P
+files in this repo are created by my other one name eJinn, these are for my Evo framwork.
