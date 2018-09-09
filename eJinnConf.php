@@ -19,11 +19,15 @@ return [
             "interfaces"    => [
                 "EvoExceptionInterface"
             ],
+            "implements" => ["EvoExceptionInterface"],
             "exceptions" => [
                 //general errors 1000-2000
                 "1000"  => "InvalidArgument",
                 //shutdown errors 2000-3000
-                "2000"   => "ShutdownError",
+                "2000"   => [
+                    "name"      => "ShutdownError",
+                    "extends"   => "\ErrorException"
+                 ],
                 "2001"   => "RuntimeError",
             ]
         ]

@@ -11,9 +11,9 @@ namespace evo\exception;
  * @link https://github.com/ArtisticPhoenix//issues
  * @version 1.0.0
  * @eJinn:buildVersion 1.0.0
- * @eJinn:buildTime 1536465687.723
+ * @eJinn:buildTime 1536473546.7922
  */
-class ShutdownError extends \Exception
+class ShutdownError extends \ErrorException implements \EvoExceptionInterface
 {
 
     /**
@@ -24,10 +24,10 @@ class ShutdownError extends \Exception
     /**
      *
      * {@inheritDoc}
-     * @see \Exception::__construct()
+     * @see \ErrorException::__construct()
      */
-    public function __construct($message = "", $code = 2000, \Exception $previous = null)
+    public function __construct($message = "", $code = 2000, $severity = 1, $filename = null, $lineno = null, \Exception $previous = null)
     {
-        parent::__construct($message, $code, $previous);
+        parent::__construct($message, $code, $severity, $filename, $lineno, $previous);
     }
 }

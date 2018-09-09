@@ -11,9 +11,9 @@ namespace evo\exception;
  * @link https://github.com/ArtisticPhoenix//issues
  * @version 1.0.0
  * @eJinn:buildVersion 1.0.0
- * @eJinn:buildTime 1536465687.723
+ * @eJinn:buildTime 1536473546.7922
  */
-class RuntimeError extends \Exception
+class RuntimeError extends \Exception implements \EvoExceptionInterface
 {
 
     /**
