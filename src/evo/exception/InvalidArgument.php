@@ -11,9 +11,9 @@ namespace evo\exception;
  * @link https://github.com/ArtisticPhoenix//issues
  * @version 1.0.0
  * @eJinn:buildVersion 1.0.0
- * @eJinn:buildTime 1536474022.265
+ * @eJinn:buildTime 1536474220.0325
  */
-class InvalidArgument extends \Exception implements \EvoExceptionInterface
+class InvalidArgument extends \Exception implements \evo\exception\EvoExceptionInterface
 {
 
     /**

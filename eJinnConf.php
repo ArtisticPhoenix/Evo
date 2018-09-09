@@ -19,7 +19,7 @@ return [
             "interfaces"    => [
                 "EvoExceptionInterface"
             ],
-            "implements" => ["EvoExceptionInterface"],
+            "implements" => ["\\evo\\exception\\EvoExceptionInterface"],
             "exceptions" => [
                 //general errors 1000-2000
                 "1000"  => "InvalidArgument",
