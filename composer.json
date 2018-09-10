@@ -8,8 +8,7 @@
 	],
 	"autoload" : {
 		"psr-4" : {
-			"evo\\" : "src/evo",
-			"evo\\exception" : "src/evo/exception"
+			"evo\\" : "src/evo"
 		}
 	},
 	"support" : {
