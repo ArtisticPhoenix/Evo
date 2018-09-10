@@ -8,9 +8,7 @@ return [
     "support"       => "https://github.com/ArtisticPhoenix/{project}/issues",
     "version"       => "1.0.0",
     "_reserved"       => [
-        1,
-        2,
-        [8,20]
+        [1,1000] //some of these will be used in the future
     ],
     "namespaces"     => [  
         "evo\\exception"  => [
