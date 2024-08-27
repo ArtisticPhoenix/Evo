@@ -3,9 +3,9 @@ namespace evo\exception;
 
 /**
  * (eJinn Generated File, do not edit directly)
- * Exception thrown to indicate range errors during program execution. Normally this means
- * there was an arithmetic error other than under/overflow. This represents errors that
- * should be detected at run time. This is the runtime version of DomainException.
+ * Error is thrown when an error occurs while performing mathematical operations. These
+ * errors include attempting to perform a bitshift by a negative amount, and any call to
+ * intdiv() that would result in a value outside the possible bounds of an int.
  * 
  * @author ArtisticPhoenix
  * @package Evo
@@ -16,21 +16,21 @@ namespace evo\exception;
  * @eJinn:buildVersion 2.0.0
  * @eJinn:buildTime 1725893458.9799
  */
-class RangeException extends \RangeException implements EvoExceptionInterface
+class ArithmeticError extends \ArithmeticError implements EvoExceptionInterface
 {
 
     /**
      * For easier access to the error code
      * @var int
      */
-    const int ERROR_CODE = 942;
+    const int ERROR_CODE = 957;
 
     /**
      *
      * {@inheritDoc}
-     * @see \RangeException::__construct()
+     * @see \ArithmeticError::__construct()
      */
-    public function __construct($message = "", $code = 942, \Throwable $previous = null)
+    public function __construct($message = "", $code = 957, \Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

@@ -3,9 +3,7 @@ namespace evo\exception;
 
 /**
  * (eJinn Generated File, do not edit directly)
- * Exception thrown to indicate range errors during program execution. Normally this means
- * there was an arithmetic error other than under/overflow. This represents errors that
- * should be detected at run time. This is the runtime version of DomainException.
+ * Exception thrown if a callback refers to an undefined class property.
  * 
  * @author ArtisticPhoenix
  * @package Evo
@@ -16,21 +14,21 @@ namespace evo\exception;
  * @eJinn:buildVersion 2.0.0
  * @eJinn:buildTime 1725893458.9799
  */
-class RangeException extends \RangeException implements EvoExceptionInterface
+class BadPropertyCallException extends LogicException implements EvoExceptionInterface
 {
 
     /**
      * For easier access to the error code
      * @var int
      */
-    const int ERROR_CODE = 942;
+    const int ERROR_CODE = 909;
 
     /**
      *
      * {@inheritDoc}
-     * @see \RangeException::__construct()
+     * @see LogicException::__construct()
      */
-    public function __construct($message = "", $code = 942, \Throwable $previous = null)
+    public function __construct($message = "", $code = 909, \Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

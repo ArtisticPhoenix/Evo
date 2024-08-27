@@ -3,31 +3,32 @@ namespace evo\exception;
 
 /**
  * (eJinn Generated File, do not edit directly)
- * Exception handler
- *
+ * Exception thrown when adding an element to a full container.
+ * 
  * @author ArtisticPhoenix
  * @package Evo
  * @subpackage Evo
- * @link https://github.com/ArtisticPhoenix//issues
- * @version 1.0.0
- * @license 
+ * @link https://github.com/ArtisticPhoenix/eJinn/issues
+ * @version 2.0.0
+ * @license GPL-3.0
  * @eJinn:buildVersion 2.0.0
- * @eJinn:buildTime 1724726717.6419
+ * @eJinn:buildTime 1725893458.9799
  */
-class OverflowException extends \OverflowException implements \evo\exception\EvoExceptionInterface
+class OverflowException extends \OverflowException implements EvoExceptionInterface
 {
 
     /**
+     * For easier access to the error code
      * @var int
      */
-    const ERROR_CODE = 940;
+    const int ERROR_CODE = 939;
 
     /**
      *
      * {@inheritDoc}
      * @see \OverflowException::__construct()
      */
-    public function __construct($message = "", $code = 940, \Throwable $previous = null)
+    public function __construct($message = "", $code = 939, \Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

@@ -3,17 +3,18 @@ namespace evo\exception;
 
 /**
  * (eJinn Generated File, do not edit directly)
- * Exception handler
- *
+ * Base Interface for all EVO Exceptions. All exceptions should implement it. All Interfaces
+ * should extend it.
+ * 
  * @author ArtisticPhoenix
  * @package Evo
  * @subpackage Evo
- * @link https://github.com/ArtisticPhoenix/{project}/issues
- * @version 1.0.0
- * @license 
+ * @link https://github.com/ArtisticPhoenix/eJinn/issues
+ * @version 2.0.0
+ * @license GPL-3.0
  * @eJinn:buildVersion 2.0.0
- * @eJinn:buildTime 1724726717.6419
+ * @eJinn:buildTime 1725893458.9799
  */
-interface EvoExceptionInterface 
+interface EvoExceptionInterface extends \Throwable
 {
 }

@@ -3,8 +3,7 @@ namespace evo\exception;
 
 /**
  * (eJinn Generated File, do not edit directly)
- * Exception that represents error in the program logic. This kind of exception should lead
- * directly to a fix in your code
+ * ErrorException thrown during shutdown by an uncaught Error.
  * 
  * @author ArtisticPhoenix
  * @package Evo
@@ -15,22 +14,22 @@ namespace evo\exception;
  * @eJinn:buildVersion 2.0.0
  * @eJinn:buildTime 1725893458.9799
  */
-class LogicException extends \LogicException implements EvoExceptionInterface
+class ShutdownErrorException extends ErrorException implements EvoExceptionInterface
 {
 
     /**
      * For easier access to the error code
      * @var int
      */
-    const int ERROR_CODE = 930;
+    const int ERROR_CODE = 25;
 
     /**
      *
      * {@inheritDoc}
-     * @see \LogicException::__construct()
+     * @see ErrorException::__construct()
      */
-    public function __construct($message = "", $code = 930, \Throwable $previous = null)
+    public function __construct($message = "", $code = 25, $severity = 1, $filename =null, $lineno = null, \Throwable $previous = null)
     {
-        parent::__construct($message, $code, $previous);
+        parent::__construct($message, $code, $severity, $filename, $lineno, $previous);
     }
 }
