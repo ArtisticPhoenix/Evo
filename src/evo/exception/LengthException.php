@@ -10,23 +10,24 @@ namespace evo\exception;
  * @subpackage Evo
  * @link https://github.com/ArtisticPhoenix//issues
  * @version 1.0.0
- * @eJinn:buildVersion 1.0.0
- * @eJinn:buildTime 1536474220.0325
+ * @license 
+ * @eJinn:buildVersion 2.0.0
+ * @eJinn:buildTime 1724726717.6419
  */
-class InvalidArgument extends \Exception implements \evo\exception\EvoExceptionInterface
+class LengthException extends \LengthException implements \evo\exception\EvoExceptionInterface
 {
 
     /**
      * @var int
      */
-    const ERROR_CODE = 1000;
+    const ERROR_CODE = 920;
 
     /**
      *
      * {@inheritDoc}
-     * @see \Exception::__construct()
+     * @see \LengthException::__construct()
      */
-    public function __construct($message = "", $code = 1000, \Exception $previous = null)
+    public function __construct($message = "", $code = 920, \Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

@@ -14,20 +14,20 @@ namespace evo\exception;
  * @eJinn:buildVersion 2.0.0
  * @eJinn:buildTime 1724726717.6419
  */
-class RuntimeError extends \RuntimeException implements \evo\exception\EvoExceptionInterface
+class LogicException extends \LogicException implements \evo\exception\EvoExceptionInterface
 {
 
     /**
      * @var int
      */
-    const ERROR_CODE = 15;
+    const ERROR_CODE = 925;
 
     /**
      *
      * {@inheritDoc}
-     * @see \RuntimeException::__construct()
+     * @see \LogicException::__construct()
      */
-    public function __construct($message = "", $code = 15, \Throwable $previous = null)
+    public function __construct($message = "", $code = 925, \Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

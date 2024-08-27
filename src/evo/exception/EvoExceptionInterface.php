@@ -10,9 +10,10 @@ namespace evo\exception;
  * @subpackage Evo
  * @link https://github.com/ArtisticPhoenix/{project}/issues
  * @version 1.0.0
- * @eJinn:buildVersion 1.0.0
- * @eJinn:buildTime 1536474220.0325
+ * @license 
+ * @eJinn:buildVersion 2.0.0
+ * @eJinn:buildTime 1724726717.6419
  */
-interface EvoExceptionInterface
+interface EvoExceptionInterface 
 {
 }

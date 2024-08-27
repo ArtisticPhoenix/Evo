@@ -14,21 +14,21 @@ namespace evo\exception;
  * @eJinn:buildVersion 2.0.0
  * @eJinn:buildTime 1724726717.6419
  */
-class RuntimeError extends \RuntimeException implements \evo\exception\EvoExceptionInterface
+class ErrorException extends \ErrorException implements \evo\exception\EvoExceptionInterface
 {
 
     /**
      * @var int
      */
-    const ERROR_CODE = 15;
+    const ERROR_CODE = 970;
 
     /**
      *
      * {@inheritDoc}
-     * @see \RuntimeException::__construct()
+     * @see \ErrorException::__construct()
      */
-    public function __construct($message = "", $code = 15, \Throwable $previous = null)
+    public function __construct($message = "", $code = 970, $severity = 1, $filename =null, $lineno = null, \Throwable $previous = null)
     {
-        parent::__construct($message, $code, $previous);
+        parent::__construct($message, $code, $severity, $filename, $lineno, $previous);
     }
 }
