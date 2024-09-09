@@ -8,7 +8,7 @@ return [
     "buildpath"     => str_replace('\\','/',realpath(__DIR__.'/../')),
     "support"       => "https://github.com/ArtisticPhoenix/eJinn/issues",
     "version"       => "2.0.0",
-    "reserved"       => [[400,499],[500,599]], //for HTTP errors
+    "reserved"       => [[400,599]], //for HTTP errors
     "namespaces"     => [
           "evo\\exception"  => [
                 "subpackage"    => "Evo",
@@ -19,15 +19,7 @@ return [
                         "description"     => "Base Interface for all EVO Exceptions. All exceptions should implement it.
                           All Interfaces should extend it.",
                         "extends"         => "\\Throwable"
-                    ]/*, [
-                        "name"            => "HttpClientExceptionInterface", //400 series
-                        "description"     => "Base Interface for all Client HTTP exceptions.",
-                        "extends"         => "\\Throwable"
-                    ], [
-                        "name"            => "HttpServerExceptionInterface", //500 series
-                        "description"     => "Base Interface for all Server HTTP exceptions.",
-                        "extends"         => "\\Throwable"
-                    ]*/
+                    ]
                 ],
                 "implements" => [
                     /* All EVO exceptions should implement the EvoThrowable Interface. */
@@ -76,7 +68,7 @@ return [
                     //"402"=> "Http402PaymentRequired",
                     //"403"=> "Http403Forbidden",
                     //"404"=> "Http404NotFound",
-                    //"405"=> "Http405MethodNotAllowed",
+                    //"405"=> "Http405MethodNotAllowed", 
                     //"406"=> "Http406NotAcceptable",
                     //"407"=> "Http407ProxyAuthenticationRequired",
                     //"408"=> "Http408RequestTimeout",
@@ -260,14 +252,7 @@ return [
                         "name"          => "UnhandledMatchError",
                         "description"   => "",
                         "extends"       => "\\UnhandledMatchError"
-                    ],
-                    "981"       => [
-                        "name"          => "FiberError",
-                        "description"   => "",
-                        "extends"       => "\\FiberError"
-                    ],
-                    //1000 block general development errors
-
+                    ]
 
                     //2000 block resource errors
                     "2000"=> [
