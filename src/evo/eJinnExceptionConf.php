@@ -252,8 +252,7 @@ return [
                         "name"          => "UnhandledMatchError",
                         "description"   => "",
                         "extends"       => "\\UnhandledMatchError"
-                    ]
-
+                    ],
                     //2000 block resource errors
                     "2000"=> [
                         "name"          => "ResourceException",
