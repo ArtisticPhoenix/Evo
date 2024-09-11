@@ -4,7 +4,7 @@ namespace evo\exception;
 /**
  * (eJinn Generated File, do not edit directly)
  * Exception thrown when an illegal index was requested. This represents errors that should
- * be detected at compile time. This is the runtime version of DomainException
+ * be detected at run time. This is the runtime version of DomainException
  * 
  * @author ArtisticPhoenix
  * @package Evo
@@ -13,7 +13,7 @@ namespace evo\exception;
  * @version 2.0.0
  * @license GPL-3.0
  * @eJinn:buildVersion 2.0.0
- * @eJinn:buildTime 1725893458.9799
+ * @eJinn:buildTime 1726078982.2638
  */
 class OutOfRangeException extends \OutOfRangeException implements EvoExceptionInterface
 {

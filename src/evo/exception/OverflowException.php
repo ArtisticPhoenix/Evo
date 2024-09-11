@@ -12,7 +12,7 @@ namespace evo\exception;
  * @version 2.0.0
  * @license GPL-3.0
  * @eJinn:buildVersion 2.0.0
- * @eJinn:buildTime 1725893458.9799
+ * @eJinn:buildTime 1726078982.2638
  */
 class OverflowException extends \OverflowException implements EvoExceptionInterface
 {

@@ -168,7 +168,7 @@ return [
                     "936"       => [
                         "name"          => "OutOfRangeException",
                         "description"   => "Exception thrown when an illegal index was requested. This represents errors
-                          that should be detected at compile time. This is the runtime version of DomainException",
+                          that should be detected at run time. This is the runtime version of DomainException",
                         "extends"       => "\\OutOfRangeException"
                     ],
                     "939"       => [
@@ -266,7 +266,7 @@ return [
                     ],
                     "2010"=> [
                         "name"          => "TimeoutException",
-                        "description"   => "Exception thrown if a resource takes to long to respoond.",
+                        "description"   => "Exception thrown if a resource takes to long to respond.",
                         "extends"       => "ResourceException"
                     ],
                     "2015" => [
